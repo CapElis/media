@@ -1,0 +1,158 @@
+
+.header
+{
+    display: flex;
+    background: white;
+    justify-content: center;
+
+}
+.wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+
+}
+.wrapper > div
+{
+    background: grey;
+    padding: 1em;
+
+
+
+
+}
+.box1
+{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/2;
+    border-style: solid;
+    border-color: black;
+
+}
+.box2
+{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1/2;
+    border-style: solid;
+    border-color: black;
+}
+.box3
+{
+    display: grid;
+    grid-column: 3;
+    grid-row: 1/2;
+    border-style: solid;
+    border-color: black;
+
+}
+.small_div1
+{
+    margin-top: -1em;
+    margin-right: -1em;
+    margin-bottom: 3em;
+    padding-right: -1em;
+    padding: 1em;
+    background: pink;
+    grid-column: 3;
+    grid-row: -2;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: black;
+
+}
+.small_div2
+{
+    margin-top: -1em;
+    margin-right: -1em;
+    margin-bottom: 3em;
+    padding-right: -1em;
+    padding: 1em;
+    background: red;
+    grid-column: 3;
+    grid-row: -2;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: black;
+
+}
+.small_div3
+{
+    margin-top: -1em;
+    margin-right: -1em;
+    margin-bottom: 3em;
+    padding-right: -1em;
+    padding: 1em;
+    background: yellow;
+    grid-column: 3;
+    grid-row: -2;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: black;
+}
+@media  (min-width: 768px) and (max-width: 1024px)
+{
+
+    
+    .box1
+    {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-style: solid;
+        border-color: black;
+    }
+    .box2
+    {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        border-style: solid;
+        border-color: black;
+    }
+    .box3
+    {
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 2;
+        border-style: solid;
+        border-color: black;
+    }
+
+}
+@media  (min-width: 320px) and (max-width: 768px)
+{
+    .box1
+    {
+
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-style: solid;
+        border-color: black;
+    }
+    .box2
+    {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-style: solid;
+        border-color: black;
+    }
+    .box3
+    {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border-style: solid;
+        border-color: black;
+    }
+
+}
+
+
+
+
